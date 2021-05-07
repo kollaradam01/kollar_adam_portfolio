@@ -1,0 +1,158 @@
+/*alapok*/
+	body{
+		font-size: 16px;
+		font-family: 'Pangolin', cursive;
+		font-weight: 300;
+	}
+
+	*,*::before, *::after{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	img{
+		max-width: 100%
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+/*alap_design*/
+	body{
+		display:grid;
+		grid-template-areas: 
+			"fejlec"
+			"kontent"
+			"lablec"
+		;
+		grid-template-rows: max-content 1fr max-content; 
+		min-height: 100vh;
+		
+	}
+
+	header{
+		background-color: #996633;
+		grid-area: "fejlec";
+		height: 140px;
+		border-bottom: 2px solid black;
+
+	}
+
+	main{
+		grid-area:"kontent";
+		font-size: 1rem;
+		margin-top: 100px; 
+
+
+
+	}
+
+	footer{
+		background-color: #996633;
+		grid-area:"lablec";
+		line-height: 30px;
+		border-top: 2px solid black;
+	}
+
+/*cim*/
+	#cim{
+		font-size: 4.5rem;
+		margin-top: 20px;
+		color: #ace600;
+
+	}
+
+/*gombok*/
+	.gomb{
+		display: inline-block;
+		border: 2px solid black;
+		width: auto;
+	    height: auto;
+	    font-size: 2rem;
+	    padding-right: 1.5rem;
+	    padding-left: 1.5rem;
+	    margin: 10px 20px;
+		background-color: #ace600;
+	}
+
+/*galeria_kepkeretek*/
+	.kepkeret{
+		text-align: center;
+		display: inline-block;
+		padding: 10px;
+		background-color: #ace600;
+		margin:50px;
+		max-width: auto;
+		max-height: auto;
+
+	}
+
+/*fooldal_szoveg_es_kep*/
+	.szoveg{
+		display: inline-block;
+		background-color: #ace600;
+		font-size: 1.5rem;
+		padding: 20px;
+		margin: 50px;
+		border: 5px solid black;
+		border-radius: 10px;
+		max-width: 40% ;
+	}
+
+	.nyitokep{
+		display: inline-block;
+		background-color: #ace600;
+		font-size: 1.5rem;
+		padding: 20px;
+		margin: 50px;
+		border: 5px solid black;
+		border-radius: 10px;
+		height: auto;
+
+	}
+
+/*mocsar*/
+	.mocsar{
+		font-size: 2rem;
+		text-align: center;
+		margin-top: 80px;
+		margin-bottom: 20px;
+		color: #ace600;
+	}
+
+/*tervezes*/
+	.terv{
+
+		font-size:1.2rem;
+		background-color: #ace600;
+		border: 5px solid black;
+		border-radius: 10px;
+		margin:80px 40px;
+		padding: 20px;
+
+
+	}
+	.felosztas{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 20px;
+	}
+	#tervkep{
+		text-align: center;
+
+	}
+	#forras{
+		margin-left: 10px;
+	}
+
+	.linkek{
+		margin-left:20px;
+		padding-top: 15px;
+		padding-bottom: : 15px;
+
+	}
+
+
